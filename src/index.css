@@ -1,0 +1,7 @@
+body {
+  background-image: radial-gradient(circle, #5eb1bf, #5c9da8, #598992, #54767c, #4f6367);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}

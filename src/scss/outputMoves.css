@@ -1,0 +1,26 @@
+.wrapper {
+		width: 90%;
+		margin: auto;
+}
+
+.wrapper h2 {
+		margin: 1%;
+		color: white;
+}
+
+.results {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		justify-content: center;
+}
+
+.results p {
+		margin: 1%;
+		background-color: #4F6367;
+		text-transform: capitalize;
+		font-weight: bold;
+		color: white;
+		padding: 10px 20px;
+		box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.48);
+}

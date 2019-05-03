@@ -1,0 +1,10 @@
+.decoration {
+		background: url("../img/knight-on-horse-vector-art.png") no-repeat;
+		background-size: contain;
+		height: 50vh;
+		width: 30%;
+		position: absolute;
+		z-index: -1;
+		top: 10%;
+		right: 34%;
+}

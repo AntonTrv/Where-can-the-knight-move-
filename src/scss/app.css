@@ -1,0 +1,16 @@
+.app {
+		margin: auto;
+		text-align: center;
+		width: 60%;
+		margin-top: 15%;
+}
+
+.app h1, .app h3 {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: floralwhite;
+}
+
+.app h3 {
+		margin-top: 10%;
+}

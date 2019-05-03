@@ -1,0 +1,20 @@
+.bottomDecoration {
+  background: url('../img/knight2.png') no-repeat;
+  background-size: contain;
+  height: 50vh;
+  width: 90%;
+  position: absolute;
+  bottom: -20%;
+    left: -6%;
+}
+
+.bottomDecorationTwo {
+  background: url('../img/knight2.png') no-repeat;
+  background-size: contain;
+  height: 50vh;
+  width: 20%;
+  position: absolute;
+  transform: rotate(27deg);
+  right: -10%;
+  bottom: -20%;
+}
