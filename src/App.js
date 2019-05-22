@@ -32,7 +32,8 @@ class App extends React.Component {
     const startCoordsX = this.state.axisX.indexOf(inputValue[0]) + 1;
     const xAxisMoves = this.getAllMoves(startCoordsX);
     const yAxisMoves = this.getAllMoves(startCoordsY);
-    this.getAllAvailableMoves(startCoordsX, startCoordsY, xAxisMoves, yAxisMoves);
+    (startCoordsX && startCoordsY > 0 && startCoordsY < 9 && !parseInt(inputValue[2]) && parseInt(inputValue[2]) !== 0)
+      ? this.getAllAvailableMoves(startCoordsX, startCoordsY, xAxisMoves, yAxisMoves) : alert('wrong input data. limits are A-H : 1-8');
     e.target.elements[0].focus();
   }
 
@@ -58,7 +59,7 @@ class App extends React.Component {
   getAllAvailableMoves(startCoordsX, startCoordsY, xAxisMoves, yAxisMoves) {
     const gotAllMoves = [];
     xAxisMoves.map(i => yAxisMoves.map(j => ((Math.abs(startCoordsX - i) + Math.abs(startCoordsY - j) === 3)
-      ? gotAllMoves.push([this.state.axisX[i - 1], j + 1]) : null)));
+      ? gotAllMoves.push([this.state.axisX[i - 1], j]) : null)));
     this.setState({ availableMoves: gotAllMoves.map(i => i[0] + i[1]) });
   }
 
